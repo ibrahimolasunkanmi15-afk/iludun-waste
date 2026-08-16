@@ -45,6 +45,13 @@ Wait and let Netlify  makes the application go  live.
 Manual Push: Commit updates via Git to GitHub, which automatically triggers a 
 rebuilding cycle on Netlify if continuous deployment is linked.
 🔒 Security Notice
-The default admin password is set to iludun2026 For security purposes. Login to the 
+The code to set admin password is ### 🔒 Security & Local Configuration
+1. Create a `.env` file in the root directory of the project.
+2. Copy and paste the following keys into the file:
+   ```env
+   VITE_ADMIN_PASSWORD=your_secure_password_here
+   ```
+3. Replace `your_secure_password_here` with your custom administrator password.
+ For security purposes. Login to the 
 admin panel immediately upon first load and navigate to the password settings module 
 to change this value.
